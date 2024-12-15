@@ -1,0 +1,1348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+:root {
+    --primary-color: #00040b;
+    --primary-light: #a0b3e5;
+    --orange-color: #f35405;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00040b;
+    color: #eee;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+
+}
+.highlight {
+    color: #e74c3c; /* Change text color to a bright red */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.nav-bar.active {
+
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 2px #a0b3e5;
+
+}
+
+.content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.6rem 1rem;
+}
+
+.nav-bar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+.nav-bar .site-logo {
+    padding: 0.5rem;
+}
+
+.nav-bar .site-logo .logo-link {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #fff;
+    border-top: 4px solid #fff;
+    text-decoration-line: none;
+}
+
+.nav-bar .navigation {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.nav-bar .navigation .link a {
+    padding: 0.25rem 0.5rem;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    border-top: 1px solid transparent;
+    transition: all 0.6s;
+    text-decoration-line: none;
+}
+
+.nav-bar .navigation .link:hover a {
+    color: #f35405;
+    border-top: 1px solid #f35405;
+}
+.ri-double-quotes-l, .ri-double-quotes-r {
+    font-size: 2rem;  /* Increase size if necessary */
+    color: #000;      /* Adjust color */
+}
+
+
+.home {
+    background: url(./assets/header.jfif) no-repeat center center;
+    background-size:cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures content starts from the top */
+    align-items: center; /* Centers content horizontally */
+    gap: 2rem; /* Space between content elements */
+    padding-top: 10vh; /* Adjust top padding to create distance from the top */
+    background-color: #000; /* Fallback background color for when the image doesn't cover fully */
+}
+
+
+.home .background-video {
+    width: 100%;
+    height: 75%;
+    object-fit: cover; /* Ensures the video fills the container without distortion */
+}
+.home .content {
+    position: relative; /* Ensures content appears above the video */
+    z-index: 1;
+}
+.home .content h1 {
+    
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px #fff;
+    background-clip: text;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#847c7c), to(#000));
+    max-width: 450px;
+    
+    
+}
+
+.home .content h4 {
+font-family: 'Poppins', sans-serif;
+font-weight: bolder;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #a4b5e0;
+}
+
+
+.btn-explore {
+    width: fit-content;
+    background-color: #f35405cc;
+    padding: 0.9rem 2.4rem;
+    padding-left: 1rem;
+    font-size: 16px;
+    line-height: 16px;
+    color: #eee;
+    border: 2px solid #f35405cc;
+    margin-top: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 1s;
+}
+
+.btn-explore:hover {
+    border: 2px solid #f35405;
+    background-color: #f35405;
+    padding-left: 2rem;
+
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+section .content {
+    width: 100%;
+    max-width: 1300px;
+}
+
+section .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 2rem 0rem;
+}
+
+section .heading .title {
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #fff;
+    text-align: center;
+
+}
+
+section .heading .subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    color: #eee;
+}
+/* Styling for the .box-link class */
+.box-link {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #d3f333; /* Blue background */
+    color: rgb(10, 10, 10); /* White text */
+    font-size: 16px; /* Font size */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for box-link */
+  .box-link:hover {
+    background-color: #f11124; /* Darker blue on hover */
+    text-decoration: none; /* Keeps text without underline on hover */
+  }
+  
+  /* Layout styling for the columns */
+  .item-data {
+    display: flex;
+    justify-content: space-between; /* Spread out the columns */
+    gap: 20px; /* Adds space between the columns */
+  }
+  
+  .col {
+    width: 30%; /* Each column takes up 30% of the width */
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Space between the heading and link */
+  }
+  
+  .about {
+    position: relative; /* Enables positioning of content over video */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fallback color in case video doesn't load */
+  }
+  
+  .about .content {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Position relative to allow text overlay */
+    z-index: 2; /* Ensure content appears above the video */
+    padding: 20px;
+  }
+/* General Section Styles */
+.about {
+    position: relative; /* Enables positioning of content over video */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fallback color in case video doesn't load */
+  }
+  
+  .about .content {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Position relative to allow text overlay */
+    z-index: 2; /* Ensure content appears above the video */
+    padding: 20px;
+  }
+  .video-section {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between content and video */
+    align-items: center; /* Align vertically */
+    padding: 20px;
+  }
+  
+  .content-wrapper {
+    flex: 1; /* Content takes up 50% of the space */
+    padding: 20px;
+  }
+  
+  .video-wrapper {
+    flex: 1; /* Video takes up 50% of the space */
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center; /* Center the video vertically */
+  }
+  
+  .background-video {
+    width: 100%; /* Full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    object-fit: cover; /* Ensures the video fills its area */
+  }
+  
+   
+  
+  .item {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Adjust width as needed */
+  }
+  
+  .about-title {
+    margin: 20px 0;
+    font-size: 3rem;
+    color: #7f1010;
+    font-family: Impact, sans-serif;
+  }
+  
+  .about-desc {
+    color: #21bace;
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .about-desc .highlight {
+    font-weight: bold;
+    color: #4c4c4c;
+  }
+  
+  .item-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .col {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .col h1 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .box-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #21bace;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .box-link:hover {
+    background-color: #1a94a3;
+  }
+  
+  .btn-explore {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #7f1010;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-explore:hover {
+    background-color: #5c0c0c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .item {
+      width: 95%;
+    }
+  
+    .item-data {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col {
+      margin: 10px 0;
+    }
+  }
+   
+.about .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    width: 100%;
+}
+
+.about .items .item,
+.about .items .image {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about .items .image {
+    padding: 2rem;
+    padding-left: 0rem;
+}
+
+.about .items .image img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+}
+
+.about .item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about .items .item .about-title {
+    font-size: 46px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.about .items .item .about-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about .items .item .about-desc p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #eee;
+}
+
+
+.about .item-data {
+    width: 100%;
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.about .item-data .col {
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: #ffffff44;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 6px solid #000;
+
+    cursor: pointer;
+
+}
+
+.about .item-data .col:hover {
+
+    background-color: #00000077;
+    border-top: 6px solid #fff;
+
+}
+
+.about .item-data .col h1 {
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.about .item-data .col span {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.next {
+    background-color: var(--primary-color);
+
+}
+
+.next .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem;
+    padding: 0rem 1rem;
+}
+
+.next .items .card {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    max-width: 350px;
+}
+
+.next .items .card .image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(to top, #00040b, #00040bbb);
+    position: relative;
+
+}
+
+.next .items .card .image::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 60%;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, var(--primary-color) 5%, transparent);
+}
+
+.next .items .card .image img {
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
+    object-fit: cover;
+}
+
+.next .card .content-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0rem 1rem;
+    transform: translateY(-20px);
+    color: #fff;
+    z-index: 100;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+
+.next .card .content-card h4 {
+    font-size: 42px;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #FFD700;
+    letter-spacing: 2px;
+}
+
+.next .card .content-card p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #060606;
+}
+
+.next .card .content-card .btn-read {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #e608a4;
+    padding: 0.8rem 2.4rem;
+    width: fit-content;
+    background-color:aquamarine;
+    border: 1.6px solid #eee;
+    cursor: pointer;
+    transition: all 1s ease-in;
+    margin-top: 1rem;
+}
+
+.next .card .content-card .btn-read:hover {
+    padding-left: 3rem;
+    color: #ce1a1a;
+    border: 1.6px solid #1898a3;
+
+}
+.btn-read-more {
+    display:inline-block; /* Make it behave like a box */
+   /* Make it stretch across the container */
+    padding: 5px 10px; /* Vertical padding for a button-like look */
+    background-color: #ddd651; /* Blue background */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    text-transform: uppercase; /* Make the text uppercase */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  }
+  
+  .btn-read-more:hover {
+    background-color: #e91010; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .btn-read-more:active {
+    background-color: #8ade92; /* Even darker blue when clicked */
+    transform: translateY(0); /* Reset lift effect */
+  }
+  
+.blog {
+    background-color: #010101;
+
+}
+
+.blog .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0rem 1rem;
+}
+
+.blog .items .card {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.blog .card .content-card h4 {
+    font-size: 42px;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.blog .items .card::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to top, #010101, transparent);
+    z-index: 0;
+}
+
+.blog .items .card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    transition: all 1s;
+}
+
+.blog .items .card:hover img {
+    transform: scale(1.1);
+
+}
+
+.blog .items .card .content-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transform: translateY(20px);
+    transition: all 1s;
+
+
+}
+
+.blog .items .card:hover .content-card {
+    position: absolute;
+    transform: translateY(-30px);
+
+}
+
+.blog .items .card p {
+    padding: 1rem 1rem;
+    font-size: 16px;
+    color: #fff;
+}
+
+.site-banner {
+    background-color: #000;
+    padding: 2rem 0rem;
+}
+
+.site-banner .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.site-banner .row p {
+    font-weight: 800;
+    font-size: 200px;
+    background-image: url(./assets/ox.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: #010101;
+    -webkit-text-fill-color: transparent;
+}
+
+.site-banner .row small {
+    font-family: 600;
+    font-size: 80px;
+}
+
+
+.gallery {
+    background-color:#050505}
+
+.gallery .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    padding: 0rem 1rem;
+    position: relative;
+    overflow: hidden;
+    max-height: 450px;
+    overflow: hidden;
+    padding: 1rem 0rem;
+
+}
+
+
+.gallery .items .card {
+    grid-column: span 1;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 1s;
+    font-family: fantasy;
+    color: #c81e9b;
+
+    
+}
+.gallery .card .content-card h4 {
+    font-size: 30px;
+    font-family: fantasy;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #000000;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    text-align: center;
+    padding-bottom: 20px;
+    
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(-100%); /* Start with the text off-screen */
+    animation: slideInFromBottom  5s infinite; /* Apply the animation */
+}
+
+/* Define the animation */
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%); /* Start position off-screen */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End position at its original position */
+    }
+}
+
+
+.gallery .card .content-card p {
+    font-size: 16px;
+    font-family: Cochin;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #3a3a0c;
+    letter-spacing: 3px;
+    transition:0.5s ;
+}
+
+
+.gallery .items .card:hover {
+    grid-column: span 2;
+
+}
+
+.gallery .items .card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    transition: all 1s;
+}
+.carousel-item {
+    position: relative;
+    height: 400px; /* Adjust the height of the section */
+    overflow: hidden; /* To hide the overflowed content */
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img {
+    
+    width: 50%; /* Ensure image takes full width */
+    height: auto; /* Keep image aspect ratio intact */
+    object-fit: cover; /* This will cover the area without distorting the image */
+    transition: transform 0.3s ease; /* Smooth transition for zooming */
+}
+
+.carousel-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    
+}
+
+.carousel-item .contents-card {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    text-align: center;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds background to text for visibility */
+    color: white;
+}
+
+.carousel-item .contents-card button {
+    margin-top: 10px;
+}
+
+.carousel-item .contents-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 20px; /* Adjust this value for positioning the content */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.carousel-item .contents-card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(254, 216, 26, 0.915);
+
+}
+.carousel-item .contents-card button {
+    margin-top: 10px; /* Space between text and button */
+}
+
+/* Basic Carousel Styling */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  /* Carousel Images */
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Carousel Controls (Previous/Next) */
+  .carousel-control-prev, 
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 5%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    visibility: hidden;
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+    
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
+  
+  /* Carousel Indicators */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #ffffff;
+  }
+  
+  /* Card Inside Carousel */
+  .contents-card {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .contents-card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .contents-card p {
+    font-size: 1rem;
+  }
+  
+  .contents-card button {
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contents-card button:hover {
+    background-color: #050505;
+    color: white;
+  }
+  
+.contact {
+    background-color: #010101;
+}
+
+.contact .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.contact .item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact .item .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact .item .heading .title,
+.contact .heading .subtitle {
+    text-align: start;
+    max-width: 80%;
+}
+
+.contact .item form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background-color: #00040b;
+}
+
+.contact .item .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.contact .item .row .card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid #eee;
+    border-top: 2px solid #fff;
+    border-bottom: 8px solid transparent;
+    transition: all 0.9s;
+    cursor: pointer;
+}
+
+.contact .item .row .card:hover {
+    background-color: #a0b3e511;
+    border-bottom: 8px solid #f35405;
+
+}
+
+.contact .item .card .line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+
+}
+
+.contact .item .card i {
+    font-size: 80px;
+}
+
+.contact .item .card h4 {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #f35405;
+
+}
+
+.contact .item .card p {
+    width: 90%;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+    height: 30px;
+    display: flex;
+    align-items: flex-start;
+    transition: align-items 1s;
+}
+
+.contact .item .card:hover p {
+    border-bottom: 1px solid transparent;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact .item form .input {
+    padding: 1.6rem 1rem;
+    background-color: #a0b3e511;
+    border: none;
+    border-bottom: 2px solid #a0b3e5;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.contact .item form .btn-contact {
+    padding: 1.6rem 0.5rem;
+    background-color: #f3540577;
+    border: none;
+    border-bottom: 2px solid #f35405;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.contact .item form .btn-contact:hover {
+    background-color: #f35405;
+}
+
+/* Remove underline and change color for social media icons */
+.footer .social a {
+    color: inherit; /* Inherit color from parent or set your custom color */
+    text-decoration: none; /* Remove underline from the links */
+}
+
+/* Change color of the links when hovered */
+.footer .social a:hover {
+    color: #f35405; /* Set the hover color to your desired shade */
+}
+
+/* Remove underline and color for navigation links */
+.footer .navigation .link a {
+    color: inherit; /* Inherit color from parent or set your custom color */
+    text-decoration: none; /* Remove underline from the links */
+}
+
+/* Change color of the navigation links when hovered */
+.footer .navigation .link a:hover {
+    color: #f35405; /* Set the hover color to your desired shade */
+}
+
+footer {
+    color: #fff;
+}
+
+.zoom-text {
+    font-size: 50px;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-weight: bold;
+    color: #9b59b6;
+    text-align: center;
+    animation: zoomInOut 2s infinite;
+  }
+  
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+footer .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    color: #fff;
+}
+
+footer .content h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 46px;
+    line-height: 46px;
+}
+
+footer .content .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+footer .content .social a i {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer .content .social a:hover i {
+    font-size: 24px;
+    color: #ecf456;
+    text-decoration: none;
+}
+.footer .social span {
+    display: inline-block;
+  }
+
+footer .content p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+footer .content p i {
+    font-size: 36px;
+    color: #ffffff44;
+    padding-bottom: 2rem;
+    text-decoration-line: none;
+
+}
+
+footer .content .navigation {
+    width: 100%;
+    text-decoration: none;
+    text-decoration-line: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    list-style: none;
+
+}
+
+footer .content .navigation .link {
+    padding: 3px 0px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration-line: none;
+    
+
+}
+
+footer .content .navigation .link a {
+    font-size: 18px;
+    color: #fff;
+    text-transform: lowercase;
+    font-weight: 300;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+footer .content .navigation .link:hover {
+    border-bottom: 1px solid #eee;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+footer .rights {
+    width: 100%;
+    border-top: 1px solid #eeeeee77;
+    padding: 1rem;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+    color: #ffffffcc;
+
+}
+
+footer .rights a {
+    color: #ffffff;
+    font-weight: 400;
+
+}
+
+.icon-bars,#bars {
+    display: none;
+    text-decoration-line: none;
+}
+
+@media (max-width:700px) {
+    .icon-bars {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        transform: rotate(90deg);
+        text-decoration-line: none;
+    }
+
+    .icon-bars i {
+        color: #fff;
+        font-size: 20px;
+        text-decoration-line: none;
+    }
+
+    .nav-bar .navigation {
+        position: fixed;
+        text-decoration-line: none;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background-color: #000;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.4rem;
+        transition: all 2s;
+        text-decoration: none;
+        
+    }
+   #bars:checked~.nav-bar .navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    .site-banner .row p {
+        font-size: 50px;
+
+    }
+
+    .site-banner .row small {
+        font-size: 20px;
+
+    }
+
+
+}
