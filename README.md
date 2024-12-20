@@ -30,8 +30,7 @@ Deploy this ARM template in the resource group of RG1 by using the below command
 [az deployment group create --resource-group rg2024  --template-file containerRegistry.json --verbose]
    ![image](https://github.com/user-attachments/assets/7903ddd4-f178-48c3-b872-e65df0905eb9)
    ![image](https://github.com/user-attachments/assets/48b94b37-cb48-4097-81ca-3abfcd226e3e)
-
-   Graphical user interface or portal view:
+Graphical user interface or portal view:
    ![image](https://github.com/user-attachments/assets/906f95f8-f133-451e-b891-569a48a772cc) 
 
 3.	Create the Docker file to configure the static website with nginx web 
