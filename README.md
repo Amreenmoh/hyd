@@ -1,12 +1,13 @@
-Deployment of static website using ACI (Docker)
+# Deployment of static website using ACI (Docker)
 _______________________________________________________________________________________________
-Project overview: 
+## Project overview: 
 _______________________________________________________________________________________________
 Deployment of Static Website Using Azure Container Instances (ACI)
-Project Goal:
+
+## Project Goal:
 _______________________________________________________________________________________________
 To efficiently and cost-effectively deploy a static website to Azure using Azure Container Instances (ACI), leveraging its server less nature and rapid deployment capabilities.
-Project Scope:
+## Project Scope:
 _______________________________________________________________________________________________
 •	Static Website: A collection of  HTML, CSS and JS files that don't require server-side processing.
 •	Azure Container Instance (ACI): A server less container service that allows you to run containers without managing virtual machines.
@@ -19,7 +20,7 @@ Technologies and Azure Services Used:
 6.	Dokerfile: It is used to define the environment for your static website (nginx).
 7.	GIT: Cloned the website from GitHub using a custom script.
 
-Project Approach:
+## Project Approach:
 _______________________________________________________________________________________________
 1.	Create the resource group using custom azure cli commands:
 [az group create - -name <resource-group-name> - -location <location-name> --verbose]
@@ -39,9 +40,7 @@ Deploy this ARM template in the resource group of RG1 by using the below command
 ![image](https://github.com/user-attachments/assets/48b94b37-cb48-4097-81ca-3abfcd226e3e)
 
 Graphical user interface or portal view:
-![image](https://github.com/user-attachments/assets/906f95f8-f133-451e-b891-569a48a772cc)
-
- 
+![image](https://github.com/user-attachments/assets/906f95f8-f133-451e-b891-569a48a772cc) 
 
 3.	Create the Docker file to configure the static website with nginx web 
    server using ARM template.
@@ -85,7 +84,7 @@ Portal View:
    ![image](https://github.com/user-attachments/assets/006aefbd-d8b7-49db-9840-078e2641f36b)
    ![image](https://github.com/user-attachments/assets/289e95fd-f75d-44b0-95a1-c57c526cceab)
   	
-Conclusion:
+## Conclusion:
 _______________________________________________________________________________________________
 Deploying a static website using Azure Container Instances (ACI) and Azure Container Registry (ACR) provides a modern, efficient, and scalable solution for hosting. By leveraging serverless technologies, this approach eliminates the complexity of managing traditional servers, allowing developers to focus entirely on application functionality and user experience. With minimal infrastructure overhead, quick deployment using Docker and ARM templates, and the flexibility to integrate with other Azure services, this method ensures cost-effectiveness and operational simplicity. As a result, it serves as an ideal solution for projects that require lightweight, high-performance website hosting while embracing the full potential of cloud-native technologies.
 
