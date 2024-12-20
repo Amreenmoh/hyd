@@ -26,13 +26,13 @@ ARM template is a JSON file that defines the infrastructure and configuration fo
 Here we used the ARM template to create the resource ACR (azure container registry).
 ![image](https://github.com/user-attachments/assets/ec4362f7-8f0f-4d50-9140-d991894fdeb2)
 
-Deploy this ARM template in the resource group of RG1 by using the below command from .Json file path.
-[az deployment group create --resource-group rg2024  --template-file containerRegistry.json --verbose]
-![image](https://github.com/user-attachments/assets/7903ddd4-f178-48c3-b872-e65df0905eb9)
-![image](https://github.com/user-attachments/assets/48b94b37-cb48-4097-81ca-3abfcd226e3e)
+   Deploy this ARM template in the resource group of RG1 by using the below command from .Json file path.
+   [az deployment group create --resource-group rg2024  --template-file containerRegistry.json --verbose]
+   ![image](https://github.com/user-attachments/assets/7903ddd4-f178-48c3-b872-e65df0905eb9)
+   ![image](https://github.com/user-attachments/assets/48b94b37-cb48-4097-81ca-3abfcd226e3e)
 
-Graphical user interface or portal view:
-![image](https://github.com/user-attachments/assets/906f95f8-f133-451e-b891-569a48a772cc) 
+   Graphical user interface or portal view:
+   ![image](https://github.com/user-attachments/assets/906f95f8-f133-451e-b891-569a48a772cc) 
 
 3.	Create the Docker file to configure the static website with nginx web 
    server using ARM template.
