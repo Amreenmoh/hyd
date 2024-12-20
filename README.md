@@ -4,7 +4,7 @@ Deployment of Static Website Using Azure Container Instances (ACI)
 ## Project Goal:
 To efficiently and cost-effectively deploy a static website to Azure using Azure Container Instances (ACI), leveraging its server less nature and rapid deployment capabilities.
 ## Project Scope:
-•	Static Website: A collection of  HTML, CSS and JS files that don't require server-side processing.
+•	Static Website: A collection of  HTML, CSS and JS files that don't require server-side processing. 
 •	Azure Container Instance (ACI): A server less container service that allows you to run containers without managing virtual machines.
 ## Technologies and Azure Services Used:
 1.	Azure CLI: Used to create the resource group, ACR (Azure Container Registry) and ACI (Azure Container Instance).
