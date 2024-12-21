@@ -67,6 +67,7 @@ Portal View:
    ![image](https://github.com/user-attachments/assets/c9ff3d23-2fcd-4d38-82db-f9139710d828)
 
 8.	Now copy the FQDN (fully qualified domain name) or IP address of ACI and browse it in any browser. Then our static website gets alive.
+   ![image](https://github.com/user-attachments/assets/afb646c1-07f6-4ac8-ae40-56b20b193b4f)
    ![image](https://github.com/user-attachments/assets/7df84cdc-04bf-4542-b813-efacc8be128f)
   	![image](https://github.com/user-attachments/assets/fe55364e-b9e3-4ee5-aa49-fd6d346daf11)
    ![image](https://github.com/user-attachments/assets/b2c183da-afa4-41ec-9860-5be6a66091f0)
