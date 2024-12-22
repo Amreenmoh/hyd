@@ -18,7 +18,7 @@ To efficiently and cost-effectively deploy a static website to Azure using Azure
 
 ## Project Approach:
 First login using cli command: az login 
-1.	Create the resource group using custom azure cli commands:
+1.	Create the resource group using custom azure cli command:
 [az group create - -name <resource-group-name> - -location <location-name> --verbose]
 Ex: az group create --name rg2024 -- location eastus --verbose 
 ![image](https://github.com/user-attachments/assets/78996d36-2489-45a8-99e1-7712deea04db)
