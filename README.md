@@ -17,6 +17,7 @@ To efficiently and cost-effectively deploy a static website to Azure using Azure
 7.	GIT: Cloned the website from GitHub using a custom script.
 
 ## Project Approach:
+First login using cli command: az login 
 1.	Create the resource group using custom azure cli commands:
 [az group create - -name <resource-group-name> - -location <location-name> --verbose]
 Ex: az group create --name rg2024 -- location eastus --verbose 
